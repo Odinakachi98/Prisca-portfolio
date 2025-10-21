@@ -67,37 +67,106 @@
     transition: 0.4s;
 }
 
-@media(max-width:768px){
-.services{
-    align-items: start;
-    gap: 45px;
-    margin: 45px 170px ;
+@media (max-width: 768px) {
+    .services{
+        align-items: center; /* Changed from start to center for mobile */
+        gap: 30px; /* Reduced from 45px */
+        margin: 30px 20px; /* Fixed: Changed from 45px 170px to reasonable mobile margins */
+        padding: 0 10px; /* Added padding for safety */
+        width: 100%; /* Ensure full width */
+        box-sizing: border-box; /* Include padding in width */
+    }
+    
+    .services-title {
+        position: relative; /* For proper image positioning */
+        text-align: center; /* Center title on mobile */
+        width: 100%;
+    }
+    
+    .services-title h1{
+        padding: 0;
+        font-size: 28px; /* Slightly reduced from 30px */
+        margin-bottom: 10px; /* Add space below title */
+    }
+    
+    .services-title img{
+        width: 60px; /* Reduced from 80px */
+        position: absolute;
+        right: 10px; /* Fixed: Changed from -20px to positive value */
+        bottom: -10px;
+    }
+    
+    .services-format{
+        gap: 15px; /* Increased from 10px for better spacing */
+        padding: 25px 20px; /* Increased padding for better touch areas */
+        margin: 0 auto; /* Center each service item */
+        width: 100%; /* Full width within container */
+        max-width: 350px; /* Limit max width for readability */
+    }
+    
+    .services-format h2{
+        font-size: 20px; /* Slightly increased from 18px for better hierarchy */
+        text-align: center; /* Center align headings */
+    }
+    
+    .services-format p{
+        font-size: 16px; /* Increased from 15px for better readability */
+        line-height: 1.6; /* Fixed: Changed from 32px to relative unit */
+        max-width: 100%; /* Fixed: Changed from 300px to use full available width */
+        text-align: center; /* Center align text */
+    }
+    
+    .services-readmore {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+    
+    .services-readmore img{
+        width: 18px; /* Slightly reduced from 20px */
+    }
+    
+    .services-container{
+        grid-template-columns: 1fr; /* Fixed: Changed from 1fr 1fr to single column */
+        gap: 25px; /* Slightly reduced from 30px */
+        width: 100%;
+        max-width: 400px; /* Limit max width */
+        margin: 0 auto; /* Center the grid */
+    }
 }
-.services-title h1{
-    padding: 0;
-    font-size: 30px ;
-}
-.services-title img{
-    width: 80px;
-    right: -20px;
-}
-.services-format{
-    gap: 10px;
-    padding: 20px;
-}
-.services-format h2{
-    font-size: 18px;
-}
-.services-format p{
-    font-size: 15px;
-    line-height: 32px;
-    max-width: 300px;
-}
-.services-readmore img{
-    width: 20px;
-}
-.services-container{
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-}
+
+/* Additional ultra-mobile fix for very small screens */
+@media (max-width: 480px) {
+    .services{
+        margin: 20px 10px;
+        gap: 25px;
+    }
+    
+    .services-title h1{
+        font-size: 24px;
+    }
+    
+    .services-title img{
+        width: 50px;
+        right: 5px;
+    }
+    
+    .services-format{
+        padding: 20px 15px;
+        gap: 12px;
+    }
+    
+    .services-format h2{
+        font-size: 18px;
+    }
+    
+    .services-format p{
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    
+    .services-container{
+        gap: 20px;
+    }
 }

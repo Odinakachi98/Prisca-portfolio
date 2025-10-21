@@ -97,54 +97,93 @@
     transition: 0.5s;
 }
 
-@media(max-width:768px){
-    .about{
+@media (max-width: 768px) {
+    .about {
         gap: 45px;
-        margin: 45px 170px;
+        margin: 45px 20px;
         align-items: start;
+        /* Add these for better mobile experience */
+        padding: 20px 0;
+        width: 100%;
+        box-sizing: border-box;
     }
-    .about-title h1{
-        font-size: 30px ;
+    
+    .about-title {
+        position: relative;
+        width: 100%;
+    }
+    
+    .about-title h1 {
+        font-size: 30px;
         padding: 0;
-
+        /* Add mobile optimization */
+        line-height: 1.2;
+        margin-bottom: 10px;
     }
-    .about-title img{
-        width: 80px ;
+    
+    .about-title img {
+        width: 80px;
         right: -20px;
+        /* Ensure proper positioning */
+        position: absolute;
+        bottom: -10px;
     }
-    .about-sections{
+    
+    .about-sections {
         flex-direction: column;
+        gap: 30px; /* Add consistent spacing */
     }
-    .about-left{
+    
+    .about-left {
         display: none;
     }
-    .about-para{
+    
+    .about-para {
         font-size: 18px;
         line-height: 32px;
+        /* Improve readability */
+        text-align: justify;
+        margin-bottom: 20px;
     }
-    .about-skill{
+    
+    .about-skill {
         gap: 20px;
         align-items: center;
+        width: 100%;
     }
-
-.about-skill p{
-    font-size: 18px;
-}
-.about-skill hr{
-    height: 6px;
-}
-.about-achievements{
-    justify-content: space-between;
-}
-.about-achievement{
-    gap: 10px;
-}
-.about-achievement h1{
-    font-size: 34px;
-    font-weight: 700px;
-}
-.about-achievement p{
-    text-align: center;
-    font-size: 16px;
-}
+    
+    .about-skill p {
+        font-size: 18px;
+        min-width: 80px; /* Consistent label width */
+    }
+    
+    .about-skill hr {
+        height: 6px;
+        flex: 1; /* Take remaining space */
+        border-radius: 3px;
+    }
+    
+    .about-achievements {
+        justify-content: space-between;
+        flex-wrap: wrap; /* Allow wrapping on very small screens */
+        gap: 15px;
+    }
+    
+    .about-achievement {
+        gap: 10px;
+        flex: 1; /* Flexible sizing */
+        min-width: 120px; /* Prevent too small on narrow screens */
+    }
+    
+    .about-achievement h1 {
+        font-size: 34px;
+        font-weight: 700; /* Fixed typo: was 700px */
+        line-height: 1;
+    }
+    
+    .about-achievement p {
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.3;
+    }
 }
