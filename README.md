@@ -2,26 +2,26 @@
 
 A modern, responsive portfolio website built with React and Vite.
 
-## íº€ Live Demo
-[Coming soon - will add Netlify link]
+## ï¿½ï¿½ï¿½ Live Demo
+https://priscaportfolio.netlify.app/
 
-## í»  Built With
+## ï¿½ï¿½ï¿½ Built With
 - React
 - Vite
 - CSS3
 - JavaScript
 
-## í³¦ Installation
+## ï¿½ï¿½ï¿½ Installation
 \`bash
 npm install
 npm run dev
 \`
 
-## íº€ Deployment
+## ï¿½ï¿½ï¿½ Deployment
 \`bash
 npm run build
 \`
 
-## í³ License
+## ï¿½ï¿½ï¿½ License
 MIT License
 
