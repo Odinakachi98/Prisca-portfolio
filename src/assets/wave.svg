@@ -1,0 +1,13 @@
+<svg width="200" height="80" viewBox="0 0 200 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="waveGradient" x1="0" y1="0" x2="200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0014ff"/>
+      <stop offset="1" stop-color="#00ff54"/>
+    </linearGradient>
+  </defs>
+  <path d="M10 40 C 50 10, 90 70, 130 40 S 190 70, 190 40" 
+        stroke="url(#waveGradient)" 
+        stroke-width="12" 
+        fill="none" 
+        stroke-linecap="round"/>
+</svg>
