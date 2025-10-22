@@ -50,18 +50,18 @@
 
 @media (max-width: 768px) {
    .navbar{
-    margin: 20px 25px; /* Reduced from 50px - too much for mobile */
-    padding: 0 10px; /* Added padding for safety */
+    margin: 20px 25px; 
+    padding: 0 10px; 
    }
 
    .nav-connect{
-    display: none; /* Good - hides desktop CTA */
+    display: none; 
    }
 
    .nav-mob-open{
     display: block;
-    position: relative; /* Changed from fixed */
-    margin-right: 0; /* Fixed: Changed from -500px */
+    position: relative; 
+    margin-right: 0; 
     background: none;
     border: none;
     cursor: pointer;
@@ -88,32 +88,32 @@
     position: fixed;
     flex-direction: column;
     align-items: start;
-    justify-content: flex-start; /* Align items to top */
+    justify-content: flex-start;
     top: 0;
-    gap: 30px; /* Increased gap for touch targets */
+    gap: 30px; 
     background-color: #1f0016;
-    width: 100%; /* Fixed: Changed from 350px to full width */
-    max-width: 350px; /* Limit max width */
+    width: 100%; 
+    max-width: 350px; 
     height: 100%;
     z-index: 1000;
-    transition: transform 0.3s ease; /* Better transition */
-    right: -100%; /* Fixed: Changed from -400px to -100% */
-    padding: 80px 0 0 0; /* Added top padding for close button */
+    transition: transform 0.3s ease; 
+    right: -100%; 
+    padding: 80px 0 0 0; 
    }
 
-   /* Active state when menu is open */
+   
    .nav-menu.active {
-    right: 0; /* Or use transform: translateX(0); */
+    right: 0; 
     transform: translateX(0);
    }
 
    .nav-menu li{
-    font-size: 24px; /* Reduced from 30px - too large */
+    font-size: 24px; 
     padding-left: 40px;
     flex-direction: row;
     gap: 15px;
     width: 100%;
-    padding: 15px 40px; /* Added vertical padding for touch */
+    padding: 15px 40px; 
    }
 
    .nav-menu li a {
@@ -123,10 +123,10 @@
     text-decoration: none;
     color: inherit;
     width: 100%;
-    min-height: 44px; /* Mobile-friendly touch target */
+    min-height: 44px; 
    }
 
-   /* Overlay for when menu is open */
+   
    .nav-overlay {
     position: fixed;
     top: 0;
@@ -143,14 +143,14 @@
    }
 }
 
-/* Additional ultra-mobile fix for very small screens */
+
 @media (max-width: 480px) {
    .navbar{
     margin: 15px 20px;
    }
 
    .nav-menu{
-    max-width: 300px; /* Slightly narrower on very small screens */
+    max-width: 300px; 
     padding: 70px 0 0 0;
    }
 

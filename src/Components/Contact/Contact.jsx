@@ -40,8 +40,8 @@ const Contact = () => {
 
       <div className="contact-section">
         <div className="contact-left">
-          <h1>Let's Talk</h1>
-          <p>I'm currently available to build new projects, so feel free to message me about anything you want me to work on. You can contact me:</p>
+          <h1>Let's build something together</h1>
+          <p>Do You have an idea for a project? I'd love to to help you make it a reality. Reach out to me and let's make it happen:</p>
 
           <div className="contact-details">
             <div className="contact-detail">
@@ -68,7 +68,7 @@ const Contact = () => {
           <label htmlFor="">Your Email</label>
           <input type="email" placeholder='Enter your email' name='email' required />
 
-          <label htmlFor="">Talk To Me</label>
+          <label htmlFor="">Say Hello</label>
           <textarea name="message" rows="10" placeholder='Enter your message' required></textarea>
           
           <button type='submit' className='contact-send'>Send</button>

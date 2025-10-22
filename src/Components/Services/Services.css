@@ -33,7 +33,7 @@
 }
 .services-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr ;
     gap: 40px;
     margin-bottom: 80px;
 }
@@ -69,17 +69,17 @@
 
 @media (max-width: 768px) {
     .services{
-        align-items: center; /* Changed from start to center for mobile */
-        gap: 30px; /* Reduced from 45px */
-        margin: 30px 20px; /* Fixed: Changed from 45px 170px to reasonable mobile margins */
-        padding: 0 10px; /* Added padding for safety */
-        width: 100%; /* Ensure full width */
-        box-sizing: border-box; /* Include padding in width */
+        align-items: center; 
+        gap: 30px; 
+        margin: 30px 20px; 
+        padding: 0 10px; 
+        width: 100%; 
+        box-sizing: border-box; 
     }
     
     .services-title {
-        position: relative; /* For proper image positioning */
-        text-align: center; /* Center title on mobile */
+        position: relative; 
+        text-align: center; 
         width: 100%;
     }
     
@@ -110,10 +110,10 @@
     }
     
     .services-format p{
-        font-size: 16px; /* Increased from 15px for better readability */
-        line-height: 1.6; /* Fixed: Changed from 32px to relative unit */
-        max-width: 100%; /* Fixed: Changed from 300px to use full available width */
-        text-align: center; /* Center align text */
+        font-size: 16px; 
+        line-height: 1.6; 
+        max-width: 100%; 
+        text-align: center; 
     }
     
     .services-readmore {
@@ -124,19 +124,19 @@
     }
     
     .services-readmore img{
-        width: 18px; /* Slightly reduced from 20px */
+        width: 18px; 
     }
     
     .services-container{
-        grid-template-columns: 1fr; /* Fixed: Changed from 1fr 1fr to single column */
-        gap: 25px; /* Slightly reduced from 30px */
+        grid-template-columns: 1fr; 
+        gap: 25px; 
         width: 100%;
-        max-width: 400px; /* Limit max width */
-        margin: 0 auto; /* Center the grid */
+        max-width: 400px; 
+        margin: 0 auto; 
     }
 }
 
-/* Additional ultra-mobile fix for very small screens */
+
 @media (max-width: 480px) {
     .services{
         margin: 20px 10px;

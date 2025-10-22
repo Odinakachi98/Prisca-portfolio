@@ -1,7 +1,7 @@
 import React from 'react'
 import './About.css'
 import theme from '../../assets/themepattern.png'
-import profile from '../../assets/profile.png'
+import profile from '../../assets/img_01.png'
 
 
 const About = () => {
@@ -19,8 +19,8 @@ const About = () => {
 
       <div className="about-right">
        <div className="about-para">
-        <p>I am an experienced Frontend Developer with over 3 years of experience in the field. i have had the privilege to collaborate with other frontend developers</p>
-        <p>My passion for frontend development is not only reflected in my extensive experience but also in the enthusiasm and dedication i bring to each project </p>
+        <p>I am an passionate Frontend Developer with a works with details and a love for creating user experience with a clean code and beautiful design</p>
+        <p>I'm also a lover of knowledge,novelty and a good food. so, when I'm not codind, I'm reading, reseraching and experimenting in the kitchen. </p>
        </div>
 
        <div className="about-skills">
@@ -34,7 +34,7 @@ const About = () => {
      <div className="about-achievements">
 
       <div className="about-achievement">
-        <h1>3</h1>
+        <h1>2</h1>
         <p>YEARS OF EXPERIENCE</p>
       </div>
       <hr />
