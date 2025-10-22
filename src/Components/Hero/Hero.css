@@ -47,14 +47,6 @@
     border: 2px solid #fff;
     cursor: pointer;
 }
-.hero-connect:hover{
-border: 2px solid white;
-}
-
-.hero-resume:hover{
-    border-color: #00ff58;
-}
-
 .resume-link {
     text-decoration: none;
     color: inherit;
@@ -67,6 +59,16 @@ border: 2px solid white;
     color: inherit;
     text-decoration: none;
 }
+.hero-connect:hover{
+border: 2px solid white;
+}
+
+.hero-resume:hover{
+    border-color: #00ff58;
+}
+
+
+
 
 @media (max-width: 768px) {
   .hero img {
@@ -147,6 +149,6 @@ border: 2px solid white;
   
   .hero-connect,
   .hero-resume {
-    width: 180px; /* Slightly narrower on very small screens */
+    width: 180px; 
   }
 }
