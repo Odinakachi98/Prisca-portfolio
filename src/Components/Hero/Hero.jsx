@@ -1,5 +1,5 @@
 import React from 'react'
-import './hero.css';
+import './Hero.css';
 import picture from '../../assets/me.jpg';
 import resumePDF from '../../assets/Prisca - Frontend Developer Resume - Google Docs.pdf'; 
 import AnchorLink from 'react-anchor-link-smooth-scroll';
